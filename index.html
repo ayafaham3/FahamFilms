@@ -1,62 +1,72 @@
-<!DOCTYPE html>
-<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
-<html lang="en-us">
+<html>
 
 <head>
-<meta charset="utf-8">
-<title>Hello...</title>
-<style type="text/css">
-#mainContent {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: xx-large;
-	font-weight: bold;
-	background-color: #E3F0FB;
-	border-radius: 4px;
-	padding: 10px;
-	text-align: center;
-}
-.buttonStyle {
-	border-radius: 4px;
-	border: thin solid #F0E020;
-	padding: 5px;
-	background-color: #F8F094;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-weight: bold;
-	color: #663300;
-	width: 75px;
-}
-
-.buttonStyle:hover {
-	border: thin solid #FFCC00;
-	background-color: #FCF9D6;
-	color: #996633;
-	cursor: pointer;
-}
-.buttonStyle:active {
-	border: thin solid #99CC00;
-	background-color: #F5FFD2;
-	color: #669900;
-	cursor: pointer;
-}
-
-</style>
+    <title>Skeleton</title>
+    <link type="text/css" rel='stylesheet' href='index.css' />
+    <link rel="shortcut icon" href="Images/P01.SquareLogo.png">
 </head>
 
 <body>
-<div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
-</div>
-<script> 
-var myButton = document.getElementById("clickButton");
-var myText = document.getElementById("helloText");
+    <div id="header">
+        <div id="subHeader">
+            <div id="headerLeft">
+                <img id="logo" src="Images/P02.LongLogo.png" alt="Logo" title="Logo" onclick="Home()" />
+            </div>
+            <div id="headerRight">
+                <button class="clicky" onclick="Home()">Home</button>
+                <button class="clicky" onclick="Aspect1()">Aspect1</button>
+                <button class="clicky" onclick="Aspect2()">Aspect2</button>
+            </div>
+        </div>
+    </div>
 
-myButton.addEventListener('click', doSomething, false)
+    <br>
 
-function doSomething() {
-	myText.textContent = "hello, world!";
-}
-</script>
+    <div id="bubble">
+        <div id="gallery">
+            <!--<iframe src="https://www.youtube.com/embed/Wy0-zQbnzDo" frameborder="0" allowfullscreen></iframe>-->
+            <img class="galleryImages" src="Images/P03.Image1.jpg" alt="Image1" title="Image1" />
+            <img class="galleryImages" src="Images/P04.Image2.jpg" alt="Image2" title="Image2" />
+            <img class="galleryImages" src="Images/P05.Image3.jpg" alt="Image3" title="Image3" />
+        </div>
 
+        <div id="string">
+            <h1 class="title">Skeleton</h1>
+            <p class="text">Something</p>
+        </div>
+        <br>
+
+        <div id="footerMain">
+            <div id="socialMedia">
+                <a href="http://www.tumblr.com/share/link?url=rewa14.github.io/skeleton&amp;title=Skeleton;hashtags=skeleton" target="_blank">
+                    <img class="socialButtons" src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" title="Share on Tumblr" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20site%3A%20rewa14.github.io%2Fskeleton%20%23skeleton" target="_blank">
+                    <img class="socialButtons" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" title="Share on Twitter" />
+                </a>
+                <a href="https://plus.google.com/share?url=rewa14.github.io/skeleton" target="_blank">
+                    <img class="socialButtons" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google+" title="Share on Google+" />
+                </a>
+                <a href="http://www.facebook.com/sharer.php?u=rewa14.github.io/skeleton" target="_blank">
+                    <img class="socialButtons" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" title="Share on Facebook" />
+                </a>
+                <a href="mailto:?Subject=Skeleton&amp;Body=I%20saw%20this%20and%20thought%20you%20might%20like%20it:%20 rewa14.github.io/skeleton" target="_blank">
+                    <img class="socialButtons" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                </a>
+            </div>
+
+            <div id="footer">
+                <div class="subFoot">
+                    <a href="mailto:lujanideas.com" target="blank">Email Us</a>
+                </div>
+                <div class="subFoot">Terms of Use</div>
+                <div class="subFoot">Privacy Policy</div>
+                <div id="copyright">&copy 2016 Skeleton | All rights reserved</div>
+            </div>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
 </body>
+
 </html>
